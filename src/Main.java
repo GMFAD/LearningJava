@@ -1,7 +1,18 @@
 public class Main {
-    void main() {
-        var textbox1 = new TextBox();
-        textbox1.setText("Box 1");
-        System.out.println(textbox1.text.toUpperCase());
+   static void main() {
+       int baseSalary = 50_000;
+       int overtime = 10;
+       int hourly = 20;
+
+       int wage = calculateWage(baseSalary, overtime, hourly);
+       System.out.println(wage);
+    }
+
+    public static int calculateWage(
+            int baseSalary,
+            int overtime,
+            int hourly
+    ) {
+       return baseSalary + (overtime * hourly);
     }
 }
