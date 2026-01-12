@@ -15,4 +15,14 @@ public class Employee {
     public int getBaseSalary() {
         return baseSalary;
     }
+
+    public void setHourlyRate(int hourlyRate) {
+        if (hourlyRate <= 0)
+            throw new IllegalArgumentException();
+        this.hourlyRate = hourlyRate;
+    }
+
+    public int getHourlyRate() {
+        return hourlyRate;
+    }
 }
