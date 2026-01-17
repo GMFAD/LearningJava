@@ -5,5 +5,6 @@ public class Main {
        employee.setHourlyRate(20);
        int wage = employee.calculateWage(10);
        System.out.println(wage);
+       //employee.
     }
 }
