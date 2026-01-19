@@ -14,7 +14,7 @@ public class Employee {
     public int calculateWage () {
         return baseSalary;
         //or
-        return calculateWage(0);
+        //return calculateWage(0);
     }
 
     private void setBaseSalary(int baseSalary) {
