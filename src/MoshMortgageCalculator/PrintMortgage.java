@@ -3,7 +3,6 @@ package MoshMortgageCalculator;
 import java.text.NumberFormat;
 
 public class PrintMortgage {
-
     public static void printMortgage(int principal, float annualInterest, byte years) {
         double mortgage = CalculateMortgage.calculateMortgage(principal, annualInterest, years);
         String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
